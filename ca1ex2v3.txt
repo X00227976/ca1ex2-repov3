@@ -1,0 +1,18 @@
+git config --global user.name "X00227976"
+git config --global user.email "X00227976@myTUDublin.ie"
+git config --global core.autocrlf false
+git init
+git branch -m master main
+git add .
+git commit -m "Initial commit"
+git branch feature-authv3
+git switch feature-authv3
+git add temp.cache
+git commit -m "Add update to temp.cache" 
+git checkout main
+git add temp.cache
+git commit -m "Add update to temp.cache again" 
+git merge feature-authv3
+git remote add origin https://github.com/X00227976/ca1ex2-repov3
+git push -u origin main
+git pull origin main
